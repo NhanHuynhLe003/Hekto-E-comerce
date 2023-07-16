@@ -1,0 +1,34 @@
+#EcommerceAcceoriesFashion{
+    .headerSection{
+        display: flex;
+
+        align-items: center;
+        padding: 6rem 0 6rem 8rem;
+        background-color: #F6F5FF;
+        .container{
+            h1{
+                color: var(--navy-blue);
+                font-size: 42px;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            .naviList{
+                display: flex;
+                gap: 0.25rem;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .curPage{
+                    color: var(--pink);
+                }
+            }
+        }
+    }
+    .product_list{
+        
+        
+    }
+}

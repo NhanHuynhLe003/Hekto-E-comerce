@@ -1,0 +1,112 @@
+.imgContainer{
+    width: 7.5em;
+    height: 7em;
+}
+.imgContainer>img{
+    width: 100%;
+    height: 100%;
+}
+.cardWrapper{
+    width: 10em;
+    height: 13em;
+    padding: 10px;
+    transition: 300ms;
+}
+.cardWrapper:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 1px #e8e8e8;
+    cursor: pointer;
+}
+.cardWrapper:hover .controller{
+    display: flex;
+}
+.card{
+    position: relative;
+    height: 100%;
+}
+.deal{
+    font-size: 8px;
+    font-weight: bold;
+    color: var(--white);
+    background: var(--warning);
+    padding: 2px 5px;
+}
+.cate>p{
+    color: var(--cateText);
+    font-size: 6px;
+    font-weight: 500;
+    margin-top: 3px;
+
+}
+.title{
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--off-blue);
+    margin-top: 5px;
+}
+.priceBox{
+    color: var(--off-blue);
+    font-size: 8px;
+    font-weight: bold;
+}
+.subtext{
+    color: var(--off-blue);
+    font-size: 8px;
+    font-weight: bold;
+}
+.codeText{
+    color: var(--warning);
+    font-size: 7px;
+    font-weight: bold;
+}
+.codeProduct{
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+}
+.productInfo{
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
+    margin-top: 6px;
+}
+.addToCart{
+    background-color: var(--white);
+    border: none;
+    border-radius: 50%;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.addToLike{
+    border-radius: 50%;
+    padding: 3px 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+.addToLike:hover{
+    
+    background-color: #ccc;
+}
+.zoom{
+    cursor: pointer;
+
+    border-radius: 50%;
+    padding: 3px 5px;
+    background-color: transparent;
+    border: none;
+}
+.zoom:hover{
+    background-color: #ccc;
+
+}
+.controller{
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

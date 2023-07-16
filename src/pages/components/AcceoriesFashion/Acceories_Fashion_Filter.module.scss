@@ -1,0 +1,97 @@
+.acceoriesFilterBar{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    .left{
+        h3{
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--navy-blue);
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--sub-text);
+        }
+    }
+    .right{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        .inputGroup_perPage{
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+
+            label{
+                font-size: 16px;
+                font-weight: 400;
+                color: #3F509E;
+            }
+            input{
+                width: 4rem;
+                height: 1.5rem;
+            }
+        }
+        .inputGroup_sortBy{
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+
+            label{
+                font-size: 16px;
+                font-weight: 400;
+                color: #3F509E;
+            }
+            select{
+                width: 6rem;
+                height: 1.5rem;
+            }
+        }
+
+        .inputGroup_view{
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            label{
+                font-size: 16px;
+                font-weight: 400;
+                color: #3F509E;
+            }
+            .selectView{
+                color: var(--pink);
+            }
+            button{
+                border: none;
+                background-color: transparent;
+                color: #3F509E;
+                transition: 150ms;
+
+            }
+            button:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .searchGroup{
+            position: relative;
+            height: 1.5rem;
+            width: 10rem;
+            input{
+                position:relative;
+                width: 100%;
+                height: 100%;
+                padding-right: 2rem;
+                padding-left: 0.25rem;
+            }
+            button{
+                position: absolute;
+                padding: 0 0.5rem;
+                height: 100%;
+                right: 0;
+            }
+        }
+    }
+}
