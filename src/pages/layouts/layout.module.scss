@@ -1,0 +1,19 @@
+.navWrapper{
+    display: flex;
+    justify-content: center;
+
+}
+
+.layoutWrapper{
+    // width: 100vh;
+    // overflow: hidden;
+}
+
+
+@media only screen and (max-width: 576px) {
+    /* Đặt các quy tắc CSS cho mobile ở đây */
+    .layoutWrapper{
+        width: 100vh;
+        overflow: hidden;
+    }
+  }

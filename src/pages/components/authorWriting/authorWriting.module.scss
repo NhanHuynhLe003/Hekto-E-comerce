@@ -1,0 +1,26 @@
+
+.title{
+    color: var(--navy-blue);
+    font-weight: bold;
+    font-size: var(--font-size-exlarge);
+
+}
+
+.desc{
+    color: var(--sub-text);
+    font-weight: 400;
+    font-size: var(--font-size-small);
+    margin: 1.5em 0 1em 0;
+}
+
+.readMoreBtn{
+    border: none;
+    background: none;
+    color: var(--navy-blue);
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+.readMoreBtn:hover{
+    opacity: 0.6;
+}

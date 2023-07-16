@@ -1,0 +1,46 @@
+.cardAds {
+  width: 10em;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+//   justify-content: center;
+  background-size: cover;
+  background-position: center;
+  padding: 2.5em 0.5em;
+}
+
+.title {
+  color: var(--white);
+  font-size: var(--font-size-small);
+}
+.priceBoard {
+  font-size: var(--font-size-ex-small);
+  color: var(--white);
+}
+
+.price {
+  font-size: var(--font-size-small);
+  font-weight: bold;
+}
+.dollar {
+  font-size: 7px;
+  font-weight: bold;
+}
+.priceSp {
+  display: flex;
+  align-items: start;
+}
+.priceBoard {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.shopBtn {
+  width: fit-content;
+  padding: 4px 22px;
+  border: none;
+  font-size: 9px;
+  color: var(--white);
+  background: linear-gradient(93.31deg, #19a3ff 3.14%, #2bd6e8 99.29%), linear-gradient(0deg, #c4c4c4, #c4c4c4);
+  cursor: pointer;
+}
