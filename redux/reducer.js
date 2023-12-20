@@ -1,33 +1,56 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    acceoriesShop: {
-        perpage: 20,
-        sortBy: '', //name,price, favourite
-        searchResult: '',
-        viewState: 1 //1: thLarge, 2: list
-    }
-}
+  shopCategory: {
+    perpage: 20,
+    sortBy: "",
+    searchResult: "",
+    viewState: 1,
+  },
+  shopList: {
+    perpage: 20,
+    sortBy: "",
+    searchResult: "",
+    viewState: 1,
+  },
+  shopLeftSideBar: {
+    perpage: 20,
+    sortBy: "",
+    searchResult: "",
+    viewState: 1,
+    listProductBrand: {},
+    discountOffers: {},
+  },
+};
 export const ReducerSlice = createSlice({
-    name: 'hekto_reducer',
-    initialState,
-    reducers: {
-        changePerPageQuantity:(state, action) => {
-            state.acceoriesShop.perpage = action.payload;
-        },
-        sortProduct:(state , action) =>{
-            state.acceoriesShop.sortBy = action.payload
-        },
-        searchProduct: (state, action) => {
-            state.acceoriesShop.searchResult = action.payload
-        },
-        selectViewState: (state, action) => {
-            state.acceoriesShop.viewState = action.payload
-        }
-        
-    }
-})
+  name: "hekto_reducer",
+  initialState,
+  reducers: {
+    changePerPageQuantity: (state, action) => {
+      state.shopCategory.perpage = action.payload.data;
+    },
+    sortProduct: (state, action) => {
+      state.shopCategory.sortBy = action.payload.data;
+    },
+    searchProduct: (state, action) => {
+      state.shopCategory.searchResult = action.payload.data;
+    },
+    selectViewState: (state, action) => {
+      state.shopCategory.viewState = action.payload.data;
+    },
+    addToListProductBrand: (state, action) => {
+      // state[action.payload.page]["listProductBrand"] = action.payload.data; //data la 1 array chua cac brand dang check
+    },
 
+    handleDiscountOffers: (state, action) => {},
+  },
+});
 
-export default ReducerSlice.reducer
-export const {changePerPageQuantity, sortProduct, searchProduct, selectViewState} = ReducerSlice.actions
+export default ReducerSlice.reducer;
+export const {
+  changePerPageQuantity,
+  sortProduct,
+  searchProduct,
+  selectViewState,
+  addToListProductBrand,
+} = ReducerSlice.actions;

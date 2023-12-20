@@ -1,0 +1,24 @@
+.colRight > img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+.navigateBtn {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--white);
+  text-decoration: none;
+  text-decoration: underline;
+}
+.promoContainer {
+  padding: 10px 10px 10px 15px;
+  width: 16em;
+  height: 8em;
+  background: var(--promo-pink);
+}
