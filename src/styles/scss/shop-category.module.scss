@@ -1,0 +1,20 @@
+.listProduct {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 3rem;
+  width: 80%;
+  .cardProductContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+  }
+}
+
+.typeListView {
+  // gap: 5rem;
+  width: 70%;
+  justify-content: space-between;
+}

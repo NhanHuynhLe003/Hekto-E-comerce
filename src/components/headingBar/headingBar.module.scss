@@ -1,0 +1,45 @@
+.iconContainer {
+  width: 14px;
+}
+.emailContainer {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.img {
+  width: 100%;
+}
+.container {
+  background-color: var(--purple);
+}
+.content {
+  color: #fff;
+  font-size: var(--font-size-small);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}
+.colFirst {
+  display: flex;
+  justify-content: right;
+  padding-right: 3em;
+}
+.colSecond {
+  display: flex;
+  justify-content: left;
+}
+.colThird {
+  display: flex;
+  gap: 5%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+}
+.container {
+  padding: 1em 0;
+}
+
+.hover:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

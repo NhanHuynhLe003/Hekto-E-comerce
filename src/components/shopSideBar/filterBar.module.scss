@@ -1,0 +1,95 @@
+.filterSideBar {
+  .productBrandGroup {
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: underline;
+      color: var(--navy-blue);
+    }
+    .checkList {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin: 0;
+      }
+    }
+  }
+
+  .discountOfferGroup {
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: underline;
+      color: var(--navy-blue);
+    }
+    .checkList {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin: 0;
+      }
+    }
+  }
+
+  .ratingItemGroup {
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: underline;
+      color: var(--navy-blue);
+    }
+    .checkList {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin: 0;
+      }
+    }
+  }
+
+  .categoriesGroup {
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: underline;
+      color: var(--navy-blue);
+    }
+    .checkList {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin: 0;
+      }
+    }
+  }
+
+  .priceFilterGroup {
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: underline;
+      color: var(--navy-blue);
+    }
+    .checkList {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin: 0;
+      }
+    }
+    .searchByPrice {
+      position: relative;
+      input {
+        position: absolute;
+        right: 0;
+        left: 0;
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
